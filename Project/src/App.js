@@ -24,8 +24,6 @@ const customStyle={
     },
   },
 }
-
-
 function App() {
   // State to store fetched data
   const column = [
@@ -67,8 +65,7 @@ function App() {
       sortable: true
     }
   ]
-    
-
+  
   // Effect hook to fetch data from backend
   useEffect(() => {
     const fetchData = async () => {
@@ -108,9 +105,7 @@ const handleFilter = (event) =>{
       data={records}
       customStyles={customStyle}
       pagination
-      
       >
-
       </DataTable>
     </div>
   )
