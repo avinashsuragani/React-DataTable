@@ -1,7 +1,4 @@
 // Import required modules
-
-
-
 const express = require('express');
 const { Pool } = require('pg');
 const cors = require('cors');
@@ -22,8 +19,6 @@ const pool = new Pool({
     port: 5432,
 });
 
-// Define API endpoints
-
 // Endpoint to retrieve 50 records from the "Details" table
 app.get('/api/details', async (req, res) => {
     try {
@@ -34,8 +29,6 @@ app.get('/api/details', async (req, res) => {
         res.status(500).json({ error: 'Internal server error' });
     }
 });
-
-
 
 // Start the Express server
 app.listen(port, () => {
